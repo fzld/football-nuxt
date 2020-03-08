@@ -1,7 +1,12 @@
-# overview nuxt-football
+# app overview
 
-> nuxt web football-data.org API
-> using tailwindcss as css framework
+> using Nuxt.js by building out a football data site using the Football-data.org API. Axios to consume APIs, and TailwindCSS as CSS framework.
+
+# Nuxt.js
+
+> Nuxt.js is a framework on top of Vue.js which allows your app to be server-side rendered. It also adds some conveniences and structure to your application which makes building medium to large sized Vue apps even easier.
+
+Check out [here](https://nuxtjs.org/guide/) for more.
 
 # Build Setup
 

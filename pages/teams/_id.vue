@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="container mx-auto py-16 p-6">
         <div class="team-container text-center">
                 <img class="logo mx-auto" :src="team.crestUrl" alt="logo">
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots">{{ team.name }}</div>
