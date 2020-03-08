@@ -4,8 +4,8 @@
       <div>
       </div>
       <nuxt-link :to="'/area/' + areas.id" v-for="areas in areas" :key="areas.id" class="w-full md:w-1/5 px-4 mb-12 no-underline">
-        <img class="thumb" :src="areas.ensignUrl" alt="flag">
-        <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots">{{ areas.name }}</div>
+        
+        <div class="bg-gray-200 hover:bg-gray-900 text-black hover:text-white font-bold py-2 px-4 rounded">{{ areas.name }}</div>
         <div class="text-grey-darker text-base overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{ areas.parentArea }}</div>
       </nuxt-link>
     </div>

@@ -1,7 +1,7 @@
-# nuxt-football
+# overview nuxt-football
 
-> SPA with football-data.org API
-> Using tailwindcss as css framework
+> nuxt web football-data.org API
+> using tailwindcss as css framework
 
 # Build Setup
 
@@ -24,5 +24,3 @@ $ npm run generate
 I'm using free version of the football-data.org API
 
 You can check competitions availability [here](https://www.football-data.org/coverage)
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org)
