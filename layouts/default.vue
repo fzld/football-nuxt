@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Navigation from '@/components/navigation'
+import Navigation from '@/components/Navigation'
 import axios from 'axios'
 
 axios.defaults.headers.common['X-Auth-Token'] = '093a611a05a44c97b2dc28821bfebb07'
