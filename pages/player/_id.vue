@@ -1,7 +1,8 @@
 <template>
     <div class="container mx-auto">
-        <div class="player-container">
-            <div class="block mb-8">
+        <div class="player-container bg-grey-200">
+            <div class="text-center">
+                <img class="h-16 w-16 rounded-full mx-auto" src="/assets/img/player.png">
                 <div>{{ player.name }}</div>
                 <div>{{ player.dateOfBirth }}</div>
                 <div>{{ player.nationality }}</div>

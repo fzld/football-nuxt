@@ -1,10 +1,12 @@
 <template>
-  <div class="container mx-auto">
-    <div class="area-container">
-      <nuxt-link :to="'/area/' + areas.id" v-for="areas in areas" :key="areas.id" class="block mb-8">
+  <div class="container mx-auto py-16 grey-200">
+    <div class="area-container flex flex-wrap -mx-4 bg-grey-200">
+      <div>
+      </div>
+      <nuxt-link :to="'/area/' + areas.id" v-for="areas in areas" :key="areas.id" class="w-full md:w-1/5 px-4 mb-12 no-underline">
         <img class="thumb" :src="areas.ensignUrl" alt="flag">
-        <div>{{ areas.name }}</div>
-        <div>{{ areas.parentArea }}</div>
+        <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots">{{ areas.name }}</div>
+        <div class="text-grey-darker text-base overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{ areas.parentArea }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -33,7 +35,13 @@ export default {
     return {
 
     }
-  }
+  },
+  head: {
+    title: 'Football-data SPA',
+    meta: [
+      {  
+      }
+    ]}
 }
 </script>
 
@@ -43,40 +51,10 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.thumb {
+  height: 100px;
+  width: 100px;
 }
 
-.thumb{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
